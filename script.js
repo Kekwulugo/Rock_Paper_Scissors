@@ -32,9 +32,21 @@ function playRound (playerSelection, computerSelection){
     computerScore++;
     
   }
+
+  return playerScore;
+  return computerScore;
   }
 
-function game () {
+  let button = document.querySelectorAll('button');
+  let div = document.querySelector('div')
+
+  button.addEventListener("click", playRound(button.value));
+
+  
+
+
+
+/*  function game () {
   for (let i = 0; i < 5; i++){
     playRound();
     console.log("Player Score: "+ playerScore);
@@ -49,3 +61,4 @@ function game () {
 }
 
   game();
+*/
